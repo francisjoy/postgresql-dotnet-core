@@ -9,8 +9,9 @@ build:
     build_file: none
     args:
       BUILD_DIR: /src
-      PROJECT_PATH: /PostgreSqlDotnetCore/PostgreSqlDotnetCore.csproj
-      NUGET_CONFIG: /Nuget.Config
+      PROJECT_PATH: /src/PostgreSqlDotnetCore/PostgreSqlDotnetCore.csproj
+      NUGET_CONFIG: /src/Nuget.Config
+      sonarqube: disabled
     output_files: output/*.zip
     image_template: dotnet-3.1
     
@@ -29,4 +30,4 @@ properties:
       vault: POSTGRESQL_DOTNET_PASSWORD
    ASPNETCORE_ENVIRONMENT: Development
    DLL: PostgreSqlDotnetCore.dll
-   revision: 29
+   revision: 30
